@@ -1,12 +1,14 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import SearchOrder from "../features/order/SearchOrder";
 
 function Header() {
-    return (
-        <header>
-            <Link to="/">Fast React Pizza Co.</Link>
-            <p>Hamido</p>
-        </header>
-    )
+  return (
+    <header>
+      <Link to="/">Fast React Pizza Co.</Link>
+      <SearchOrder />
+      <p>Hamido</p>
+    </header>
+  );
 }
 
-export default Header
+export default Header;
