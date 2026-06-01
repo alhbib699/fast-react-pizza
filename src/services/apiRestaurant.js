@@ -1,4 +1,4 @@
-const API_URL = "https://react-fast-pizza-api.jonas.io/api";
+const API_URL = 'https://react-fast-pizza-api.jonas.io/api';
 
 export async function getMenu() {
   const res = await fetch(`${API_URL}/menu`);
@@ -49,6 +49,6 @@ export async function updateOrder(id, updateObj) {
     if (!res.ok) throw Error();
     // We don't need the data, so we don't return anything
   } catch (err) {
-    throw Error("Failed updating your order", { cause: err });
+    throw Error("Failed updating your order", {cause: err});
   }
 }
